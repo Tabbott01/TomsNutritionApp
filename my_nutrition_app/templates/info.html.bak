@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>More Information</h1>
+        <a href="{{ url_for('index') }}" style="font-weight: bold;">Back to App</a>
+        <p>Thank you for using Tom's Personalised Nutrition App.</p>
+        <p>This app was created by me, Thomas, for my final year Computer Science project at the University of West London.</p>
+        <p>The app provides personalized nutrition plans based on your specific dietary needs and goals. By entering your weight, height, age, gender, and activity level, the algorithm calculates your daily caloric requirements and recommends a meal plan with various suggestions to meet those needs.</p>
+        <p>The recommended meal plans include a variety of foods grouped into breakfast, lunch, dinner, and snacks, ensuring a balanced intake of nutrients. The database includes a wide range of foods with detailed nutritional information, allowing it to tailor meal plans to your preferences and dietary restrictions.</p>
+        <p>The app uses the Mifflin-St Jeor Equation to calculate your Basal Metabolic Rate (BMR) and applies an activity multiplier to estimate your Total Daily Energy Expenditure (TDEE). Based on this, it provides meal suggestions that fit within your caloric range, with portion sizes adjusted to ensure accuracy.</p>
+        <p>The Miffiflin-St Jeor Equation is as follows:<br>
+        For men: BMR = 10W + 6.25H - 5A + 5<br>
+        For women: BMR = 9.247W + 3.098H - 4.330A + 447.593<br>
+        Where W is body weight in kg, H is body height in cm, and A is age.<br>
+        Your BMR is then multiplied between 1.2 and 1.9 to account for your activity level.</p>
+        <p>This app does not store any of the data you input, store any cache or contain any cookies.</p>
+        <p>- Thomas</p>
+    </div>
+</body>
+</html>
